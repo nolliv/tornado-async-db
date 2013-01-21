@@ -40,7 +40,6 @@ class NewPostHandler(tornado.web.RequestHandler):
                 }
         executed = db.execute(query)
         self.redirect('/story/%s' % executed)
-        self.write("It works!!!")
 
 
 application = tornado.web.Application([
