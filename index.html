@@ -1,0 +1,11 @@
+<html>
+    <body>
+        {% for entry in entries %}
+        <section>
+            {% for item in entry.values() %}
+            <article> {{ item }} </article>
+            {% end %}
+        </section>
+        {% end %}
+    </body>
+</html>
