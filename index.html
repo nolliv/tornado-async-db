@@ -2,7 +2,7 @@
     <body>
         {% for entry in entries %}
         <section>
-            {% for item in entry.values() %}
+            {% for item in entry %}
             <article> {{ item }} </article>
             {% end %}
         </section>
